@@ -1,0 +1,17 @@
+<div *ngIf="show" class="container-fluid bg-light p-5">
+     <h1 class="display-4">Jumbotron</h1>
+     <p class="lead">This is a jumbotron created using the bootstrap 5</p>
+     <hr class="my-4">
+     <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+     <h5>
+          {{Titolo}}
+     </h5>
+     <h6>
+          {{Sottotitolo}}
+     </h6>
+     <ng-container *ngIf="show">
+          <a id="SignUp" class="btn btn-primary btn-lg" routerLink="/login" role="button">Accedi</a>
+          <a id="SignUp" class="btn btn-primary btn-lg" href="#" role="button">Registrati</a>
+     </ng-container>
+</div>

@@ -1,0 +1,44 @@
+<div class="container">
+     <table>
+          <thead>
+               <tr>
+                    <th>ID</th>
+                    <th>Price</th>
+                    <th>Quantità</th>
+                    <th>Dispobilità</th>
+               </tr>
+          </thead>
+          <tbody>
+               <tr *ngFor="let articolo of list">
+                    <td>{{articolo.id}}</td>
+                    <td>{{articolo.description}}</td>
+                    <td>{{articolo.price|currency:'EUR'}}</td>
+                    <td>{{articolo.qty}}</td>
+                    <td>{{articolo.available}}</td>
+                    <td>{{articolo.data|date:'dd-mm-YYYY'}}</td>
+               </tr>
+          </tbody>
+     </table>
+
+     <table>
+          <thead>
+               <tr>
+                    <th>ID</th>
+                    <th>Price</th>
+                    <th>Quantità</th>
+                    <th>Dispobilità</th>
+               </tr>
+          </thead>
+          <tbody>
+               <tr *ngFor="let articolo of list">
+                    <td>{{articolo.id}}</td>
+                    <td>{{articolo.description}}</td>
+                    <td>{{articolo.price|currency:'EUR'}}</td>
+                    <td>{{articolo.qty}}</td>
+                    <td>{{articolo.available}}</td>
+                    <td>{{articolo.data|date:'dd-mm-YYYY'}}</td>
+               </tr>
+          </tbody>
+     </table>
+
+</div>

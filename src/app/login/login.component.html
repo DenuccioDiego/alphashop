@@ -1,0 +1,19 @@
+<label for="UserId">User ID:</label>
+<input type="text" id="userId" placeholder="Nome Utente" [(ngModel)]=userID>
+<!-- Con ngModel si attiva il binding bi-direzionale -->
+
+<label for="password">password</label>
+<input type="password" id="password" placeholder="password" [(ngModel)]=password>
+
+<button (click)=gestAuth()>Connetti</button> <!-- Chiamo il metodo gestAuth() al click del bottone -->
+
+<p class="d-flex">
+     {{userID}} <br> {{password}}
+     <!-- interpolazione che crea una connessione di sola lettura  -->
+</p>
+
+<div *ngIf="autenticationNo">
+     <span>
+          {{errorMsg}}
+     </span>
+</div>
